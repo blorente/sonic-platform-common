@@ -38,7 +38,7 @@ local_path_override(
 bazel_dep(name = "rules_distroless", version = "0.0.0")
 local_path_override(
     module_name = "rules_distroless",
-    path = "../rules_distroless",
+    path = "../../bazel-contrib/rules_distroless",
 )
 
 python = use_extension("@rules_python//python/extensions:python.bzl", "python")
